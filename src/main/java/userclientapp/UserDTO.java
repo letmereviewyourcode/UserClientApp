@@ -1,15 +1,15 @@
 package userclientapp;
 
-import com.fasterxml.jackson.annotation.JsonProperty; // This line is necessary
+import com.fasterxml.jackson.annotation.JsonProperty; // to be able to use the JsonProperty commands below
 
 public class UserDTO {
     private int id;
     private String email;
 
-    @JsonProperty("first_name") // Map the JSON property to this field
+    @JsonProperty("first_name") // Map the JSON property to this field since the firstname is named differently
     private String firstName;
 
-    @JsonProperty("last_name") // Map the JSON property to this field
+    @JsonProperty("last_name") // same reason as firstName
     private String lastName;
 
     // Getters and setters
